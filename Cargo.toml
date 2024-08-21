@@ -1,0 +1,12 @@
+[package]
+name = "fastalign"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+minimap2 = { path = "../minimap2-rs" }
+noodles = { version = "0.79.0", features = ["fasta", "sam"] }
+clap = { version = "4.5.16", features = ["derive"] }
+anyhow = "1.0.86"
+crossbeam = "0.8.4"
+crossbeam-channel = "0.5.13"
