@@ -1,4 +1,4 @@
-# fastAlign
+# fastalign
 
 Super fast multiple sequence alignments against a reference sequence. 
 
