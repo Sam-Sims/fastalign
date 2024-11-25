@@ -2,7 +2,9 @@
 
 Super fast multiple sequence alignments against a reference sequence. 
 
-Uses minimap2 (specifically rust bindings to minimap2 via the minimap2-rs crate) to get alignments between a reference sequence and a set of query sequences, and outputs this as a single aligned fasta file.
+Uses minimap2 (specifically rust bindings to minimap2 via the [minimap2-rs](https://github.com/jguhlin/minimap2-rs) crate) to get alignments between a reference sequence and a set of query sequences, and outputs this as a single aligned fasta file.
+
+You might use this when you have several thousand seqeunces to align, but expect low diverstiy between sequences (i.e an outbreak). In these situations minimap2 does a good enough job, and is much quicker.
 
 ## Usage
 ```
